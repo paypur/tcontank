@@ -12,9 +12,9 @@ import slimeknights.tconstruct.library.fluid.FluidTankAnimated;
 import slimeknights.tconstruct.library.fluid.FluidTankBase;
 
 @Mixin(FluidTankAnimated.class)
-public abstract class TankMixin extends FluidTankBase<MantleBlockEntity> {
+public abstract class FluidTankAnimatedMixin extends FluidTankBase<MantleBlockEntity> {
 
-    public TankMixin(int capacity, MantleBlockEntity parent) {
+    public FluidTankAnimatedMixin(int capacity, MantleBlockEntity parent) {
         super(capacity, parent);
     }
 
@@ -22,7 +22,7 @@ public abstract class TankMixin extends FluidTankBase<MantleBlockEntity> {
     public int fill(FluidStack resource, IFluidHandler.FluidAction action) {
         if (parent.getBlockState().getTags().anyMatch(t -> t.equals(TinkerTags.Blocks.SEARED_TANKS)) &&
                 resource.isFluidEqual(new FluidStack(TinkerFluids.blazingBlood.get().getSource(), 1))) {
-            if (Minecraft.getInstance().player != null) Minecraft.getInstance().player.sendSystemMessage(Component.literal("Seared tanks can't hold liquids greater than 1000C"));
+            if (Minecraft.getInstance().player != null) Minecraft.getInstance().player.sendSystemMessage(Component.literal("Seared tanks can't hold liquids greater than 1000°C"));
             return 0;
         }
 
