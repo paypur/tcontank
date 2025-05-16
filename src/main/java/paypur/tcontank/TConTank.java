@@ -8,7 +8,4 @@ import static paypur.tcontank.TConTank.MOD_ID;
 @Mod(MOD_ID)
 public class TConTank {
     public static final String MOD_ID = "tcontank";
-
-    public TConTank() {
-    }
 }
