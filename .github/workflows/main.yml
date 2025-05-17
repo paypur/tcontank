@@ -31,7 +31,7 @@ jobs:
         with:
           token: '${{ secrets.CF_API_TOKEN }}'
           project_id: '1266633'
-          file_path: 'build/libs/TConTankNerf-${{ env.minecraft_version }}-${{ env.mod_version }}.jar'
+          file_path: 'build/libs/tcontanknerf-${{ env.minecraft_version }}-${{ env.mod_version }}.jar'
           game_endpoint: 'minecraft'
           game_versions: 'Minecraft ${{ env.minecraft_version }},Java 17,Forge'
       - name: 'Upload to Modrinth'
@@ -39,7 +39,7 @@ jobs:
         with:
           token: '${{ secrets.MODRINTH_TOKEN }}'
           project: 'KsnGwiCS'
-          files: 'build/libs/TConTankNerf-${{ env.minecraft_version }}-${{ env.mod_version }}.jar'
+          files: 'build/libs/tcontanknerf-${{ env.minecraft_version }}-${{ env.mod_version }}.jar'
           name: 'TConTankNerf ${{ env.minecraft_version }}-${{ env.mod_version }}'
           version: '${{ env.mod_version }}'
           loaders: 'forge'

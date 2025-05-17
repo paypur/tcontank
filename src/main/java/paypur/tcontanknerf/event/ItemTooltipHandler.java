@@ -14,7 +14,7 @@ public class ItemTooltipHandler {
     @SubscribeEvent
     public static void tooltip(ItemTooltipEvent event) {
         if (event.getItemStack().is(TinkerTags.Items.SEARED_TANKS)) {
-            event.getToolTip().add(Component.translatable("tcontank.seared_tank.tooltip").withStyle(ChatFormatting.GRAY));
+            event.getToolTip().add(Component.translatable("tcontanknerf.seared_tank.tooltip").withStyle(ChatFormatting.GRAY));
         }
     }
 }
