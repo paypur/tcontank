@@ -1,4 +1,4 @@
-package paypur.tcontank.mixin;
+package paypur.tcontanknerf.mixin;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;

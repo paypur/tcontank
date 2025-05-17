@@ -1,4 +1,4 @@
-package paypur.tcontank.event;
+package paypur.tcontanknerf.event;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -6,10 +6,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import paypur.tcontank.TConTank;
+import paypur.tcontanknerf.TConTankNerf;
 import slimeknights.tconstruct.common.TinkerTags;
 
-@Mod.EventBusSubscriber(modid = TConTank.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(modid = TConTankNerf.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class ItemTooltipHandler {
     @SubscribeEvent
     public static void tooltip(ItemTooltipEvent event) {
